@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Roboto+Condensed&family=Source+Serif+Pro&display=swap');
+
+:root {
+  --background-color:  rgb(140, 189, 128);
+  --btn-bgcolor:  rgb(173, 121, 54);
+  --btn-hover: rgb(161, 148, 26);
+  --output-bg: rgb(58, 27, 129);
+  --output-text: rgb(199, 180, 180)
+  ;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.container{
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 37rem;
+}
+
+input,button{
+  max-width:15rem;
+}
+
+input{
+  font-size: 1.5rem;
+  border: 1px solid black;
+  padding: .5rem;
+}
+
+button{
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  background-color: var(--btn-bgcolor);
+}
+
+button:hover{
+  background-color: var(--btn-hover);
+}
+
+h2{
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  line-height: rem;
+  text-align: justify;
+}
+
+#output{
+  font-size: 2rem;
+  color: var(--output-text);
+  background-color: var(--output-bg);
+  text-align: justify;
+  padding: .5rem;
+}
